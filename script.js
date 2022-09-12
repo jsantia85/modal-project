@@ -25,3 +25,8 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
 // event listener
 btnCloseModal.addEventListener('click', addHidden)
 overlay.addEventListener('click', addHidden)
+
+// global event
+document.addEventListener('keydown', function() {
+  console.log('key was pressed')
+})
