@@ -27,6 +27,8 @@ btnCloseModal.addEventListener('click', addHidden)
 overlay.addEventListener('click', addHidden)
 
 // global event
-document.addEventListener('keydown', function() {
-  console.log('key was pressed')
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    console.log('Escape was pressed')
+  }
 })
